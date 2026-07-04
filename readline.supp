@@ -1,0 +1,24 @@
+{
+   readline_leaks
+   Memcheck:Leak
+   ...
+   fun:readline
+}
+{
+   add_history_leaks
+   Memcheck:Leak
+   ...
+   fun:add_history
+}
+{
+   libreadline_leaks
+   Memcheck:Leak
+   ...
+   obj:*/libreadline.so*
+}
+{
+   ncurses_tinfo_leaks
+   Memcheck:Leak
+   ...
+   obj:*/libtinfo.so*
+}
